@@ -6,15 +6,14 @@
 ## 项目成员：
     Product Owner：赵班长
 	Scrum Team：
-	前端：欢迎参与
-	后端：周伟
+	前端：高强
+	后端：周伟 
 	
 ## 开发环境：
 
 	  - Python-3.5.2
 	  - Django-1.10.4
 	  - MongoDB
-	  <!--- MySQL-->
 
 
 # 环境部署
@@ -29,17 +28,6 @@
 		switched to db cmdb
 	> db.addUser("cmdb", "cmdb");
 	
-
-<!--
-## MySQL 部署（在OpenCMDB中，MySQL用于存放CMDB管理相关数据）：
-
-	[root@linux-node3 ~]# systemctl start mariadb
-	[root@linux-node3 ~]# systemctl enable mariadb
-	MariaDB [(none)]> create database cmdb character set utf8 collate utf8_bin;
-	MariaDB [(none)]> grant all on cmdb.* to cmdb@localhost identified by 'cmdb';
-	MariaDB [(none)]> grant all on cmdb.* to cmdb@'%' identified by 'cmdb';-->
-
-
 ## Nginx部署
 	
 	[root@linux-node3 ~]# yum install -y nginx
@@ -83,4 +71,3 @@
 			}
 			
 	(cmdb_runtime) [root@linux-node3 cmdb]# python manage.py migrate
-

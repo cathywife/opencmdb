@@ -20,9 +20,9 @@
     <el-row class="tac height_100" :gutter="20">
       <el-col :span="4">
         <el-menu mode="vertical" :default-active="path" class="el-menu-vertical-demo" @select="handleSelect" router>
-          <el-menu-item index="/model"><i class="fa fa-cogs"></i> 模型</el-menu-item>
-          <el-menu-item index="/barn/"><i class="fa fa-cogs"></i> 仓库</el-menu-item>
-          <el-menu-item index="/storage"><i class="fa fa-cogs"></i> 应用</el-menu-item>
+          <el-menu-item index="/model"><i class="fa fa-cogs"></i> 模型管理</el-menu-item>
+          <el-menu-item index="/barn/"><i class="fa fa-cogs"></i> 仓库管理</el-menu-item>
+          <el-menu-item index="/storage"><i class="fa fa-cogs"></i> 应用管理</el-menu-item>
           <!--</el-menu-item-group>-->
         </el-menu>
       </el-col>
